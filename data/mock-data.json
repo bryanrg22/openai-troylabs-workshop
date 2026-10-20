@@ -1,0 +1,647 @@
+{
+  "customers": [
+    {
+      "id": 1,
+      "name": "Avery Lee",
+      "email": "customer01@example.com"
+    },
+    {
+      "id": 2,
+      "name": "Jordan Patel",
+      "email": "customer02@example.com"
+    },
+    {
+      "id": 3,
+      "name": "Taylor Nguyen",
+      "email": "customer03@example.com"
+    },
+    {
+      "id": 4,
+      "name": "Morgan Garcia",
+      "email": "customer04@example.com"
+    },
+    {
+      "id": 5,
+      "name": "Cameron Kim",
+      "email": "customer05@example.com"
+    },
+    {
+      "id": 6,
+      "name": "Riley Johnson",
+      "email": "customer06@example.com"
+    },
+    {
+      "id": 7,
+      "name": "Casey Brown",
+      "email": "customer07@example.com"
+    },
+    {
+      "id": 8,
+      "name": "Alex Ramirez",
+      "email": "customer08@example.com"
+    },
+    {
+      "id": 9,
+      "name": "Sam Chen",
+      "email": "customer09@example.com"
+    },
+    {
+      "id": 10,
+      "name": "Jamie Wilson",
+      "email": "customer10@example.com"
+    },
+    {
+      "id": 11,
+      "name": "Drew Lee",
+      "email": "customer11@example.com"
+    },
+    {
+      "id": 12,
+      "name": "Elliot Patel",
+      "email": "customer12@example.com"
+    },
+    {
+      "id": 13,
+      "name": "Skyler Nguyen",
+      "email": "customer13@example.com"
+    },
+    {
+      "id": 14,
+      "name": "Quinn Garcia",
+      "email": "customer14@example.com"
+    },
+    {
+      "id": 15,
+      "name": "Parker Kim",
+      "email": "customer15@example.com"
+    },
+    {
+      "id": 16,
+      "name": "Rowan Johnson",
+      "email": "customer16@example.com"
+    },
+    {
+      "id": 17,
+      "name": "Micah Brown",
+      "email": "customer17@example.com"
+    },
+    {
+      "id": 18,
+      "name": "Harper Ramirez",
+      "email": "customer18@example.com"
+    },
+    {
+      "id": 19,
+      "name": "Ari Chen",
+      "email": "customer19@example.com"
+    },
+    {
+      "id": 20,
+      "name": "Dakota Wilson",
+      "email": "customer20@example.com"
+    },
+    {
+      "id": 21,
+      "name": "Reese Lee",
+      "email": "customer21@example.com"
+    },
+    {
+      "id": 22,
+      "name": "Noah Patel",
+      "email": "customer22@example.com"
+    },
+    {
+      "id": 23,
+      "name": "Kai Nguyen",
+      "email": "customer23@example.com"
+    },
+    {
+      "id": 24,
+      "name": "Blair Garcia",
+      "email": "customer24@example.com"
+    },
+    {
+      "id": 25,
+      "name": "Logan Kim",
+      "email": "customer25@example.com"
+    }
+  ],
+  "orders": [
+    {
+      "id": "LD-1001",
+      "customer_id": 1,
+      "item": "Wireless Keyboard",
+      "status": "shipped",
+      "total_cents": 6148,
+      "tracking": "TRK-DEMO-00001",
+      "created_at": "2026-10-02"
+    },
+    {
+      "id": "LD-1002",
+      "customer_id": 2,
+      "item": "Ergonomic Mouse",
+      "status": "delivered",
+      "total_cents": 3319,
+      "tracking": "TRK-DEMO-00002",
+      "created_at": "2026-10-03"
+    },
+    {
+      "id": "LD-1003",
+      "customer_id": 3,
+      "item": "USB-C Dock",
+      "status": "delayed",
+      "total_cents": 11512,
+      "tracking": "TRK-DEMO-00003",
+      "created_at": "2026-10-04"
+    },
+    {
+      "id": "LD-1004",
+      "customer_id": 4,
+      "item": "Laptop Stand",
+      "status": "returned",
+      "total_cents": 10524,
+      "tracking": null,
+      "created_at": "2026-10-05"
+    },
+    {
+      "id": "LD-1005",
+      "customer_id": 5,
+      "item": "Noise-Canceling Headphones",
+      "status": "processing",
+      "total_cents": 9814,
+      "tracking": null,
+      "created_at": "2026-10-06"
+    },
+    {
+      "id": "LD-1006",
+      "customer_id": 6,
+      "item": "Webcam",
+      "status": "shipped",
+      "total_cents": 7072,
+      "tracking": "TRK-DEMO-00006",
+      "created_at": "2026-10-07"
+    },
+    {
+      "id": "LD-1007",
+      "customer_id": 7,
+      "item": "Desk Light",
+      "status": "delayed",
+      "total_cents": 5858,
+      "tracking": "TRK-DEMO-00007",
+      "created_at": "2026-10-08"
+    },
+    {
+      "id": "LD-1008",
+      "customer_id": 8,
+      "item": "Travel Charger",
+      "status": "returned",
+      "total_cents": 5348,
+      "tracking": null,
+      "created_at": "2026-10-09"
+    },
+    {
+      "id": "LD-1009",
+      "customer_id": 9,
+      "item": "Wireless Keyboard",
+      "status": "processing",
+      "total_cents": 16325,
+      "tracking": null,
+      "created_at": "2026-10-10"
+    },
+    {
+      "id": "LD-1010",
+      "customer_id": 10,
+      "item": "Ergonomic Mouse",
+      "status": "shipped",
+      "total_cents": 3541,
+      "tracking": "TRK-DEMO-00010",
+      "created_at": "2026-10-11"
+    },
+    {
+      "id": "LD-1011",
+      "customer_id": 11,
+      "item": "USB-C Dock",
+      "status": "delivered",
+      "total_cents": 3476,
+      "tracking": "TRK-DEMO-00011",
+      "created_at": "2026-10-12"
+    },
+    {
+      "id": "LD-1012",
+      "customer_id": 12,
+      "item": "Laptop Stand",
+      "status": "delayed",
+      "total_cents": 5570,
+      "tracking": "TRK-DEMO-00012",
+      "created_at": "2026-10-13"
+    },
+    {
+      "id": "LD-1013",
+      "customer_id": 13,
+      "item": "Noise-Canceling Headphones",
+      "status": "returned",
+      "total_cents": 9664,
+      "tracking": null,
+      "created_at": "2026-10-14"
+    },
+    {
+      "id": "LD-1014",
+      "customer_id": 14,
+      "item": "Webcam",
+      "status": "shipped",
+      "total_cents": 10123,
+      "tracking": "TRK-DEMO-00014",
+      "created_at": "2026-10-15"
+    },
+    {
+      "id": "LD-1015",
+      "customer_id": 15,
+      "item": "Desk Light",
+      "status": "delivered",
+      "total_cents": 3369,
+      "tracking": "TRK-DEMO-00015",
+      "created_at": "2026-10-16"
+    },
+    {
+      "id": "LD-1016",
+      "customer_id": 16,
+      "item": "Travel Charger",
+      "status": "delayed",
+      "total_cents": 9015,
+      "tracking": "TRK-DEMO-00016",
+      "created_at": "2026-10-17"
+    },
+    {
+      "id": "LD-1017",
+      "customer_id": 17,
+      "item": "Wireless Keyboard",
+      "status": "returned",
+      "total_cents": 16246,
+      "tracking": null,
+      "created_at": "2026-10-18"
+    },
+    {
+      "id": "LD-1018",
+      "customer_id": 18,
+      "item": "Ergonomic Mouse",
+      "status": "processing",
+      "total_cents": 9723,
+      "tracking": null,
+      "created_at": "2026-10-01"
+    },
+    {
+      "id": "LD-1019",
+      "customer_id": 19,
+      "item": "USB-C Dock",
+      "status": "shipped",
+      "total_cents": 17219,
+      "tracking": "TRK-DEMO-00019",
+      "created_at": "2026-10-02"
+    },
+    {
+      "id": "LD-1020",
+      "customer_id": 20,
+      "item": "Laptop Stand",
+      "status": "delivered",
+      "total_cents": 11615,
+      "tracking": "TRK-DEMO-00020",
+      "created_at": "2026-10-03"
+    },
+    {
+      "id": "LD-1021",
+      "customer_id": 21,
+      "item": "Noise-Canceling Headphones",
+      "status": "returned",
+      "total_cents": 2712,
+      "tracking": null,
+      "created_at": "2026-10-04"
+    },
+    {
+      "id": "LD-1022",
+      "customer_id": 22,
+      "item": "Webcam",
+      "status": "processing",
+      "total_cents": 7731,
+      "tracking": null,
+      "created_at": "2026-10-05"
+    },
+    {
+      "id": "LD-1023",
+      "customer_id": 23,
+      "item": "Desk Light",
+      "status": "shipped",
+      "total_cents": 16348,
+      "tracking": "TRK-DEMO-00023",
+      "created_at": "2026-10-06"
+    },
+    {
+      "id": "LD-1024",
+      "customer_id": 24,
+      "item": "Travel Charger",
+      "status": "delivered",
+      "total_cents": 13649,
+      "tracking": "TRK-DEMO-00024",
+      "created_at": "2026-10-07"
+    },
+    {
+      "id": "LD-1025",
+      "customer_id": 25,
+      "item": "Wireless Keyboard",
+      "status": "delayed",
+      "total_cents": 11605,
+      "tracking": "TRK-DEMO-00025",
+      "created_at": "2026-10-08"
+    },
+    {
+      "id": "LD-1026",
+      "customer_id": 1,
+      "item": "Ergonomic Mouse",
+      "status": "returned",
+      "total_cents": 7594,
+      "tracking": null,
+      "created_at": "2026-10-09"
+    },
+    {
+      "id": "LD-1027",
+      "customer_id": 2,
+      "item": "USB-C Dock",
+      "status": "processing",
+      "total_cents": 9555,
+      "tracking": null,
+      "created_at": "2026-10-10"
+    },
+    {
+      "id": "LD-1028",
+      "customer_id": 3,
+      "item": "Laptop Stand",
+      "status": "delivered",
+      "total_cents": 13529,
+      "tracking": "TRK-DEMO-00028",
+      "created_at": "2026-10-11"
+    },
+    {
+      "id": "LD-1029",
+      "customer_id": 4,
+      "item": "Noise-Canceling Headphones",
+      "status": "delayed",
+      "total_cents": 5849,
+      "tracking": "TRK-DEMO-00029",
+      "created_at": "2026-10-12"
+    },
+    {
+      "id": "LD-1030",
+      "customer_id": 5,
+      "item": "Webcam",
+      "status": "returned",
+      "total_cents": 5539,
+      "tracking": null,
+      "created_at": "2026-10-13"
+    },
+    {
+      "id": "LD-1031",
+      "customer_id": 6,
+      "item": "Desk Light",
+      "status": "processing",
+      "total_cents": 14949,
+      "tracking": null,
+      "created_at": "2026-10-14"
+    },
+    {
+      "id": "LD-1032",
+      "customer_id": 7,
+      "item": "Travel Charger",
+      "status": "shipped",
+      "total_cents": 5669,
+      "tracking": "TRK-DEMO-00032",
+      "created_at": "2026-10-15"
+    },
+    {
+      "id": "LD-1033",
+      "customer_id": 8,
+      "item": "Wireless Keyboard",
+      "status": "delivered",
+      "total_cents": 14263,
+      "tracking": "TRK-DEMO-00033",
+      "created_at": "2026-10-16"
+    },
+    {
+      "id": "LD-1034",
+      "customer_id": 9,
+      "item": "Ergonomic Mouse",
+      "status": "delayed",
+      "total_cents": 13770,
+      "tracking": "TRK-DEMO-00034",
+      "created_at": "2026-10-17"
+    },
+    {
+      "id": "LD-1035",
+      "customer_id": 10,
+      "item": "USB-C Dock",
+      "status": "processing",
+      "total_cents": 11167,
+      "tracking": null,
+      "created_at": "2026-10-18"
+    },
+    {
+      "id": "LD-1036",
+      "customer_id": 11,
+      "item": "Laptop Stand",
+      "status": "shipped",
+      "total_cents": 3923,
+      "tracking": "TRK-DEMO-00036",
+      "created_at": "2026-10-01"
+    },
+    {
+      "id": "LD-1037",
+      "customer_id": 12,
+      "item": "Noise-Canceling Headphones",
+      "status": "delivered",
+      "total_cents": 17554,
+      "tracking": "TRK-DEMO-00037",
+      "created_at": "2026-10-02"
+    },
+    {
+      "id": "LD-1038",
+      "customer_id": 13,
+      "item": "Webcam",
+      "status": "delayed",
+      "total_cents": 6590,
+      "tracking": "TRK-DEMO-00038",
+      "created_at": "2026-10-03"
+    },
+    {
+      "id": "LD-1039",
+      "customer_id": 14,
+      "item": "Desk Light",
+      "status": "returned",
+      "total_cents": 14903,
+      "tracking": null,
+      "created_at": "2026-10-04"
+    },
+    {
+      "id": "LD-1040",
+      "customer_id": 15,
+      "item": "Travel Charger",
+      "status": "processing",
+      "total_cents": 5082,
+      "tracking": null,
+      "created_at": "2026-10-05"
+    },
+    {
+      "id": "LD-1041",
+      "customer_id": 16,
+      "item": "Wireless Keyboard",
+      "status": "shipped",
+      "total_cents": 12106,
+      "tracking": "TRK-DEMO-00041",
+      "created_at": "2026-10-06"
+    },
+    {
+      "id": "LD-1042",
+      "customer_id": 17,
+      "item": "Ergonomic Mouse",
+      "status": "delayed",
+      "total_cents": 14350,
+      "tracking": "TRK-DEMO-00042",
+      "created_at": "2026-10-07"
+    },
+    {
+      "id": "LD-1043",
+      "customer_id": 18,
+      "item": "USB-C Dock",
+      "status": "returned",
+      "total_cents": 8800,
+      "tracking": null,
+      "created_at": "2026-10-08"
+    },
+    {
+      "id": "LD-1044",
+      "customer_id": 19,
+      "item": "Laptop Stand",
+      "status": "processing",
+      "total_cents": 4779,
+      "tracking": null,
+      "created_at": "2026-10-09"
+    },
+    {
+      "id": "LD-1045",
+      "customer_id": 20,
+      "item": "Noise-Canceling Headphones",
+      "status": "shipped",
+      "total_cents": 4001,
+      "tracking": "TRK-DEMO-00045",
+      "created_at": "2026-10-10"
+    },
+    {
+      "id": "LD-1046",
+      "customer_id": 21,
+      "item": "Webcam",
+      "status": "delivered",
+      "total_cents": 9967,
+      "tracking": "TRK-DEMO-00046",
+      "created_at": "2026-10-11"
+    },
+    {
+      "id": "LD-1047",
+      "customer_id": 22,
+      "item": "Desk Light",
+      "status": "delayed",
+      "total_cents": 11982,
+      "tracking": "TRK-DEMO-00047",
+      "created_at": "2026-10-12"
+    },
+    {
+      "id": "LD-1048",
+      "customer_id": 23,
+      "item": "Travel Charger",
+      "status": "returned",
+      "total_cents": 5114,
+      "tracking": null,
+      "created_at": "2026-10-13"
+    },
+    {
+      "id": "LD-1049",
+      "customer_id": 24,
+      "item": "Wireless Keyboard",
+      "status": "shipped",
+      "total_cents": 10128,
+      "tracking": "TRK-DEMO-00049",
+      "created_at": "2026-10-14"
+    },
+    {
+      "id": "LD-1050",
+      "customer_id": 25,
+      "item": "Ergonomic Mouse",
+      "status": "delivered",
+      "total_cents": 5809,
+      "tracking": "TRK-DEMO-00050",
+      "created_at": "2026-10-15"
+    }
+  ],
+  "tickets": [
+    {
+      "id": 1,
+      "order_id": "LD-1004",
+      "subject": "Return request",
+      "description": "Fictional starter ticket created for workshop demo.",
+      "status": "open",
+      "created_at": "2026-10-20 05:52:19"
+    },
+    {
+      "id": 2,
+      "order_id": "LD-1008",
+      "subject": "Tracking update",
+      "description": "Fictional starter ticket created for workshop demo.",
+      "status": "open",
+      "created_at": "2026-10-20 05:52:19"
+    },
+    {
+      "id": 3,
+      "order_id": "LD-1012",
+      "subject": "Product issue",
+      "description": "Fictional starter ticket created for workshop demo.",
+      "status": "resolved",
+      "created_at": "2026-10-20 05:52:19"
+    },
+    {
+      "id": 4,
+      "order_id": "LD-1016",
+      "subject": "Delivery question",
+      "description": "Fictional starter ticket created for workshop demo.",
+      "status": "open",
+      "created_at": "2026-10-20 05:52:19"
+    },
+    {
+      "id": 5,
+      "order_id": "LD-1020",
+      "subject": "Return request",
+      "description": "Fictional starter ticket created for workshop demo.",
+      "status": "open",
+      "created_at": "2026-10-20 05:52:19"
+    },
+    {
+      "id": 6,
+      "order_id": "LD-1024",
+      "subject": "Tracking update",
+      "description": "Fictional starter ticket created for workshop demo.",
+      "status": "resolved",
+      "created_at": "2026-10-20 05:52:19"
+    },
+    {
+      "id": 7,
+      "order_id": "LD-1028",
+      "subject": "Product issue",
+      "description": "Fictional starter ticket created for workshop demo.",
+      "status": "open",
+      "created_at": "2026-10-20 05:52:19"
+    },
+    {
+      "id": 8,
+      "order_id": "LD-1032",
+      "subject": "Delivery question",
+      "description": "Fictional starter ticket created for workshop demo.",
+      "status": "open",
+      "created_at": "2026-10-20 05:52:19"
+    }
+  ]
+}

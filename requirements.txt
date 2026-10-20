@@ -1,1 +1,2 @@
-# Standard library only for starter; Codex adds OpenAI SDK during the exercise.
+# No third-party packages required for the static preview.
+# Add dependencies only when implementing the relevant backend/agent stage.

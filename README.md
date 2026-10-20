@@ -5,7 +5,7 @@
 
 <h1 align="center">LaunchDesk</h1>
 
-<p align="center">A fictional customer-support startup. A working MVP. Your starting point.</p>
+<p align="center">A fictional customer-support startup. A frontend prototype and mock data. Your starting point.</p>
 
 <p align="center">
   <a href="#quick-start">Quick start</a> ·
@@ -15,44 +15,41 @@
 
 ## Quick start
 
-Requires **Git and Python 3.10+**. No extra packages, database signup, or API key needed to run the starter.
+Requires **Git and Python 3.10+**. No extra packages, database signup, or API key needed to preview the frontend.
 
 ```bash
 git clone https://github.com/bryanrg22/openai-troylabs-workshop.git
 cd openai-troylabs-workshop
-python3 server.py
+python3 -m http.server 8000 --bind 127.0.0.1
 ```
 
-Open **[http://localhost:8000](http://localhost:8000)**. Stop the server with **Ctrl+C**. On Windows, use `py -3` if `python3` is unavailable.
+Open **[http://localhost:8000/public/](http://localhost:8000/public/)**. Stop the server with **Ctrl+C**. On Windows, use `py -3` if `python3` is unavailable.
 
 ## Mock data
 
-The dashboard comes with **25 customers, 50 orders, and 8 support tickets**, plus order lookup and manual ticket creation. All data is fictional.
+The read-only preview includes **25 customers, 50 orders, and 8 support tickets**. All data is fictional. Ticket creation and chat become functional after a backend is connected.
 
 - [Company policies](data/company-policies.md)
-- [Database schema](data/schema.sql)
+- [Mock records](data/mock-data.json)
 - Example order: **LD-1007**
 
-SQLite creates and seeds `launchdesk.db` automatically. Changes persist between restarts. To reset the demo, stop the server and delete that file; the next start restores the sample data. Keep database files out of Git.
-
-**AI chat is a placeholder:** `/api/chat` returns **501 Not Implemented** until an agent is connected.
+**The application server, SQLite database, and AI agent are not implemented on this branch.** The preview reads JSON files; it does not save changes.
 
 ## How it connects
 
 ```text
-Browser · dashboard + chat UI
+Included now
+Browser · frontend prototype
                 |
-       Python HTTP API
-                |
-    SQLite · launchdesk.db
-    ├── customers
-    ├── orders
-    └── tickets
+       Mock records · JSON
 
-Company knowledge · data/company-policies.md
+To build
+Browser → Python API → SQLite
+                |
+          Support agent → OpenAI
 ```
 
-[Frontend](public/) → [Python server](server.py) → [SQLite](database.py). Everything runs locally. A future support agent can connect through the backend, using company policies and database records. Keep API keys server-side.
+[Frontend](public/) + [mock data](data/mock-data.json) + [company policies](data/company-policies.md). The preview runs locally with Python's static file server. Build the application backend and database to add persistence, then connect the agent. Keep API keys server-side.
 
 Demo only: the starter has no authentication and is not ready for real customer data.
 
