@@ -10,8 +10,7 @@
 <p align="center">
   <a href="#quick-start">Quick start</a> ·
   <a href="#mock-data">Mock data</a> ·
-  <a href="#how-it-connects">How it connects</a> ·
-  <a href="#test-your-work">Test your work</a>
+  <a href="#how-it-connects">How it connects</a>
 </p>
 
 ## Quick start
@@ -54,14 +53,6 @@ Company knowledge · data/company-policies.md
 ```
 
 [Frontend](public/) → [Python server](server.py) → [SQLite](database.py). Everything runs locally. A future support agent can connect through the backend, using company policies and database records. Keep API keys server-side.
-
-## Test your work
-
-```bash
-python3 -m unittest discover -s tests -v
-```
-
-The tests cover seeded data, valid and missing order lookups, ticket persistence, and unique customer emails.
 
 Demo only: the starter has no authentication and is not ready for real customer data.
 
