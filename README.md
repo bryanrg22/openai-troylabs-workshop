@@ -13,6 +13,8 @@
   <a href="#how-it-connects">How it connects</a>
 </p>
 
+Full numbered copy-paste prompts: [workshop/PROMPTS.md](workshop/PROMPTS.md).
+
 ## Quick start
 
 Requires **Git and Python 3.10+**. No extra packages, database signup, or API key needed to preview the frontend.
