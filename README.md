@@ -35,6 +35,8 @@ The read-only preview includes **25 customers, 50 orders, and 8 support tickets*
 - [Mock records](data/mock-data.json)
 - Example order: **LD-1007**
 
+Five **DEMO / FICTIONAL** [invoice PDFs and object-storage fixtures](mock-storage/README.md) match the seeded orders, including LD-1007. [JSON](mock-storage/manifest.json) and [CSV](mock-storage/manifest.csv) manifests map SQL order records to R2 object keys. Optional SQL examples and verification tools are included; no cloud upload or signup is needed.
+
 **The application server, SQLite database, and AI agent are not implemented on this branch.** The preview reads JSON files; it does not save changes.
 
 ## How it connects
