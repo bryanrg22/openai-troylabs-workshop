@@ -5,57 +5,63 @@
 
 <h1 align="center">LaunchDesk</h1>
 
-<p align="center">A fictional customer-support startup. A frontend prototype and mock data. Your starting point.</p>
+<p align="center">Help a startup turn its MVP into a working customer-support app.</p>
 
-<p align="center">
-  <a href="#quick-start">Quick start</a> ·
-  <a href="#mock-data">Mock data</a> ·
-  <a href="#how-it-connects">How it connects</a>
-</p>
+LaunchDesk is a fictional startup that helps teams handle order questions, deliveries, returns, and support tickets. It has an MVP dashboard. Your job is to use Codex to bring it to life.
 
-Full numbered copy-paste prompts: [workshop/PROMPTS.md](workshop/PROMPTS.md).
+This repository includes:
+
+- The existing LaunchDesk website design.
+- Customer, order, and support-ticket records for the fictional company.
+- A company handbook with shipping, return, and support policies.
+- Five invoice PDFs linked to the included orders.
+- Instructions that guide Codex through building the app.
 
 ## Quick start
 
-Requires **Git and Python 3.10+**. No extra packages, database signup, or API key needed to preview the frontend.
+**Download the project — no terminal needed:**
+
+1. Click the green **Code** button near the top of this GitHub page.
+2. Choose **Download ZIP**.
+3. Extract the ZIP file.
+4. Open **Codex** and open the extracted project folder—the one containing this README.
+5. Start with the first prompt below.
+
+**Already use Git and the Codex CLI?** Open your terminal and run:
 
 ```bash
 git clone https://github.com/bryanrg22/openai-troylabs-workshop.git
 cd openai-troylabs-workshop
-python3 -m http.server 8000 --bind 127.0.0.1
+codex
 ```
 
-Open **[http://localhost:8000/public/](http://localhost:8000/public/)**. Stop the server with **Ctrl+C**. On Windows, use `py -3` if `python3` is unavailable.
+## Prompts for Codex
 
-## Mock data
+Copy one prompt at a time into Codex. Let it handle the technical setup, implementation, and checks. Follow any sign-in or permission steps it needs, then review the result before moving to the next prompt.
 
-The read-only preview includes **25 customers, 50 orders, and 8 support tickets**. All data is fictional. Ticket creation and chat become functional after a backend is connected.
-
-- [Company policies](data/company-policies.md)
-- [Mock records](data/mock-data.json)
-- Example order: **LD-1007**
-
-Five **DEMO / FICTIONAL** [invoice PDFs and object-storage fixtures](mock-storage/README.md) match the seeded orders, including LD-1007. [JSON](mock-storage/manifest.json) and [CSV](mock-storage/manifest.csv) manifests map SQL order records to R2 object keys. Optional SQL examples and verification tools are included; no cloud upload or signup is needed.
-
-**The application server, SQLite database, and AI agent are not implemented on this branch.** The preview reads JSON files; it does not save changes.
-
-## How it connects
+### 1. Frontend
 
 ```text
-Included now
-Browser · frontend prototype
-                |
-       Mock records · JSON
-
-To build
-Browser → Python API → SQLite
-                |
-          Support agent → OpenAI
+Deploy my LaunchDesk frontend using ChatGPT Sites. Keep the existing design.
 ```
 
-[Frontend](public/) + [mock data](data/mock-data.json) + [company policies](data/company-policies.md). The preview runs locally with Python's static file server. Build the application backend and database to add persistence, then connect the agent. Keep API keys server-side.
+### 2. Backend + SQL database
 
-Demo only: the starter has no authentication and is not ready for real customer data.
+```text
+Build my backend using ChatGPT Sites and its D1 SQL database. Connect orders, customers, and support tickets so everything saves after refresh.
+```
+
+### 3. Invoice storage
+
+```text
+Store the included invoice PDFs in Sites' R2 object storage. Keep their metadata in D1 and let users download the correct invoice for each order.
+```
+
+### 4. AI Assistant
+
+```text
+Create an AI Assistant page where I can chat using my ChatGPT account without an API key. Use Agentic SQL to look up orders and retrieve invoices, answer company-policy questions, and save separate chats so I can continue them after refreshing.
+```
 
 ---
 

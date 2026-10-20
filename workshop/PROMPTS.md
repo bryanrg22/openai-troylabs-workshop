@@ -26,4 +26,4 @@ Store the included invoice PDFs in Sites' R2 object storage. Keep their metadata
 Create an AI Assistant page where I can chat using my ChatGPT account without an API key. Use Agentic SQL to look up orders and retrieve invoices, answer company-policy questions, and save separate chats so I can continue them after refreshing.
 ```
 
-The starter is intentionally incomplete. These prompts describe what to build; they do not mean the backend, storage, or AI already works. Follow AGENTS.md for this Sites workflow; the README also includes a local frontend preview.
+The starter is intentionally incomplete. These prompts describe what to build; they do not mean the backend, storage, or AI already works. Follow AGENTS.md for this Sites workflow.
